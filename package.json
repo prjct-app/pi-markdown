@@ -1,6 +1,6 @@
 {
   "name": "@prjct.app/pi-markdown",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Normalize malformed one-line Markdown code fences in Pi responses.",
   "type": "module",
   "keywords": [
@@ -34,11 +34,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/prjct-app/pi-minimalist-markdown.git"
+    "url": "git+https://github.com/prjct-app/pi-markdown.git"
   },
-  "homepage": "https://github.com/prjct-app/pi-minimalist-markdown#readme",
+  "homepage": "https://github.com/prjct-app/pi-markdown#readme",
   "bugs": {
-    "url": "https://github.com/prjct-app/pi-minimalist-markdown/issues"
+    "url": "https://github.com/prjct-app/pi-markdown/issues"
   },
   "publishConfig": {
     "access": "public"

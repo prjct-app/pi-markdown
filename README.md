@@ -1,6 +1,6 @@
 # pi-markdown
 
-[![pi-markdown — extension for PI Agent](https://raw.githubusercontent.com/prjct-app/pi-image-preview/main/docs/covers/pi-markdown.png)](https://pi.dev)
+[![pi-markdown — extension for PI Agent](https://raw.githubusercontent.com/prjct-app/pi-clipboard/main/docs/covers/pi-markdown.png)](https://pi.dev)
 
 Normalize malformed one-line Markdown code fences in Pi responses.
 
@@ -51,7 +51,7 @@ pi remove npm:@prjct.app/pi-markdown
 
 Use `pi config` to enable or disable individual resources. Use `pi config -l` for project settings and add `-l` to removal when you installed locally.
 
-To pin version 0.1.2, use `pi install npm:@prjct.app/pi-markdown@0.1.2`. Pi skips pinned npm versions during package updates. For a Git installation, update or remove using the same `git:github.com/prjct-app/pi-minimalist-markdown` source instead of the npm source.
+To pin version 0.1.3, use `pi install npm:@prjct.app/pi-markdown@0.1.3`. Pi skips pinned npm versions during package updates. For a Git installation, update or remove using the same `git:github.com/prjct-app/pi-markdown` source instead of the npm source.
 
 When switching from GitHub to npm, remove the Git installation first, then install the npm package and restart Pi.
 
