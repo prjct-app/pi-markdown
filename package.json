@@ -1,18 +1,26 @@
 {
   "name": "@prjct.app/pi-markdown",
   "version": "0.1.3",
-  "description": "Normalize malformed one-line Markdown code fences in Pi responses.",
+  "description": "Fix malformed single-line Markdown code fences in PI Agent responses so code blocks display correctly.",
   "type": "module",
   "keywords": [
     "pi-package",
     "pi",
+    "pi-agent",
+    "pi-coding-agent",
+    "pi-extension",
+    "ai-coding",
+    "developer-tools",
     "markdown",
+    "code-blocks",
+    "code-formatting",
     "terminal"
   ],
   "pi": {
     "extensions": [
       "./index.ts"
-    ]
+    ],
+    "image": "https://raw.githubusercontent.com/prjct-app/pi-clipboard/main/docs/covers/pi-markdown.png"
   },
   "scripts": {
     "check": "tsc --noEmit",
