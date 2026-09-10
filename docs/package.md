@@ -4,7 +4,7 @@
 
 - npm name: `@prjct.app/pi-markdown`.
 - Initial version: `0.1.0`.
-- Source repository: [prjct-app/pi-minimalist-markdown](https://github.com/prjct-app/pi-minimalist-markdown).
+- Source repository: [prjct-app/pi-markdown](https://github.com/prjct-app/pi-markdown).
 - Tested host: Pi `0.85.1`; Node.js `22.19+`.
 
 The npm name and repository name may differ. Repository URLs remain unchanged. Existing runtime command names, event names, persisted entry types, and settings keys are unchanged by the package rename.
