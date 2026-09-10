@@ -1,6 +1,6 @@
 {
   "name": "@prjct.app/pi-markdown",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Normalize malformed one-line Markdown code fences in Pi responses.",
   "type": "module",
   "keywords": [
