@@ -2,7 +2,7 @@
 
 [![pi-markdown — extension for PI Agent](https://raw.githubusercontent.com/prjct-app/pi-clipboard/main/docs/covers/pi-markdown.png)](https://pi.dev)
 
-Normalize malformed one-line Markdown code fences in Pi responses.
+Fix malformed single-line Markdown code fences in PI Agent responses so code blocks display correctly.
 
 `@prjct.app/pi-markdown` · Assistant Markdown display transformer; one extension.
 
