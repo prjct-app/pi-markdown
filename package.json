@@ -1,16 +1,30 @@
 {
-  "name": "@prjct-app/pi-minimalist-markdown",
+  "name": "@prjct.app/pi-markdown",
   "version": "0.1.0",
-  "description": "Display-only Markdown normalization for the Pi coding agent",
+  "description": "Normalize malformed one-line Markdown code fences in Pi responses.",
   "type": "module",
-  "keywords": ["pi-package", "pi", "markdown", "terminal"],
-  "pi": { "extensions": ["./index.ts"] },
+  "keywords": [
+    "pi-package",
+    "pi",
+    "markdown",
+    "terminal"
+  ],
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
   "scripts": {
     "check": "tsc --noEmit",
-    "test": "node --import tsx --test tests/*.test.mjs"
+    "test": "node --import tsx --test tests/*.test.mjs",
+    "check:package": "npm pack --dry-run --ignore-scripts"
   },
-  "engines": { "node": ">=22.19.0" },
-  "peerDependencies": { "@earendil-works/pi-coding-agent": "*" },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
   "devDependencies": {
     "@earendil-works/pi-coding-agent": "0.85.1",
     "@types/node": "^22.19.0",
@@ -18,9 +32,23 @@
     "typescript": "^5.9.3"
   },
   "license": "MIT",
-  "repository": { "type": "git", "url": "https://github.com/prjct-app/pi-minimalist-markdown.git" },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prjct-app/pi-minimalist-markdown.git"
+  },
   "homepage": "https://github.com/prjct-app/pi-minimalist-markdown#readme",
-  "bugs": { "url": "https://github.com/prjct-app/pi-minimalist-markdown/issues" },
-  "publishConfig": { "access": "public" },
-  "files": ["index.ts", "README.md", "LICENSE"]
+  "bugs": {
+    "url": "https://github.com/prjct-app/pi-minimalist-markdown/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "index.ts",
+    "README.md",
+    "LICENSE",
+    "CONTRIBUTING.md",
+    "CHANGELOG.md",
+    "docs/package.md"
+  ]
 }
