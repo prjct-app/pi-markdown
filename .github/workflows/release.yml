@@ -31,7 +31,7 @@ jobs:
         with:
           node-version: '24'
       - run: npm ci --prefix .github/release --ignore-scripts
-      - run: node --test .github/release/policy.test.cjs
+      - run: node --test .github/release/*.test.cjs
 
   check:
     if: github.ref == 'refs/heads/main'
@@ -67,7 +67,7 @@ jobs:
           node-version: '24'
       - run: npm ci --ignore-scripts
       - run: npm ci --prefix .github/release --ignore-scripts
-      - run: node --test .github/release/policy.test.cjs
+      - run: node --test .github/release/*.test.cjs
       - name: Skip a superseded checkout
         id: current
         env:
