@@ -1,3 +1,10 @@
+## [0.1.4](https://github.com/prjct-app/pi-markdown/compare/v0.1.3...v0.1.4) (2026-10-02)
+
+### Bug Fixes
+
+* align the release preset with its changelog writer ([bf5b520](https://github.com/prjct-app/pi-markdown/commit/bf5b520eadda3f59e8d31b1ca264d811da1096ba))
+* prepare public packages and automatic runtime dependencies ([09c8107](https://github.com/prjct-app/pi-markdown/commit/09c81078b676217da949d387d381a6b67f3a77c8))
+
 # Changelog
 
 ## 0.1.3
