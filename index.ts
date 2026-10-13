@@ -33,18 +33,18 @@ const LANGUAGE_HINTS = new Set([
 export function normalizeOneLineFences(markdown: string): string {
 	if (!markdown.includes(FENCE)) return markdown;
 
-	let openFence: { marker: string; length: number } | undefined;
+	const fenceState = { open: undefined as { marker: string; length: number } | undefined };
 	return markdown
 		.split("\n")
 		.map((line) => {
 			const fence = /^ {0,3}(`{3,}|~{3,})(.*)$/.exec(line);
-			if (openFence) {
-				if (fence && fence[1][0] === openFence.marker && fence[1].length >= openFence.length && !fence[2].trim()) openFence = undefined;
+			if (fenceState.open) {
+				if (fence && fence[1][0] === fenceState.open.marker && fence[1].length >= fenceState.open.length && !fence[2].trim()) fenceState.open = undefined;
 				return line;
 			}
 			const match = /^( {0,3})```([^`].*?)```\s*$/.exec(line);
 			if (!match) {
-				if (fence) openFence = { marker: fence[1][0], length: fence[1].length };
+				if (fence) fenceState.open = { marker: fence[1][0], length: fence[1].length };
 				return line;
 			}
 
